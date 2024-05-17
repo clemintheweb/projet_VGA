@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "patrimoine_arbore",
+"features": [
+{ "type": "Feature", "properties": { "geo_point_2d": { "lon": 7.7471947016813374, "lat": 48.585433615688189 }, "genre": "Platanus", "gw_essence": "Platanus acerifolia x", "hauteur": 29, "largeur": 24 }, "geometry": { "type": "Point", "coordinates": [ 7.747194701681337, 48.585433615688189 ] } },
+{ "type": "Feature", "properties": { "geo_point_2d": { "lon": 7.7539989401250402, "lat": 48.587147139086049 }, "genre": "Taxus", "gw_essence": "Taxus baccata", "hauteur": 4, "largeur": 4 }, "geometry": { "type": "Point", "coordinates": [ 7.75399894012504, 48.587147139086049 ] } },
+{ "type": "Feature", "properties": { "geo_point_2d": { "lon": 7.7415792825074572, "lat": 48.576961267371509 }, "genre": "Acer", "gw_essence": "Acer platanoides", "hauteur": 12, "largeur": 5 }, "geometry": { "type": "Point", "coordinates": [ 7.741579282507457, 48.576961267371509 ] } },
+{ "type": "Feature", "properties": { "geo_point_2d": { "lon": 7.7509600623811536, "lat": 48.581243716397793 }, "genre": "Tilia", "gw_essence": "Tilia europaea Pallida", "hauteur": 10, "largeur": 6 }, "geometry": { "type": "Point", "coordinates": [ 7.750960062381154, 48.581243716397793 ] } },
+{ "type": "Feature", "properties": { "geo_point_2d": { "lon": 7.773823389848598, "lat": 48.592743318110919 }, "genre": "Acer", "gw_essence": "Acer pseudoplatanus", "hauteur": 12, "largeur": 7 }, "geometry": { "type": "Point", "coordinates": [ 7.773823389848598, 48.592743318110919 ] } }
+]
+}
