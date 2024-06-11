@@ -1,0 +1,428 @@
+#fond_de_carte {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.tree-hover {
+    cursor: crosshair;
+}
+
+.content {
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+circle.Varbres {
+    stroke: none; 
+    fill: #7e5438;
+    transition: fill 0.3s, stroke 0.3s, stroke-width 0.3s; /* Smooth transitions */
+}
+
+circle.Varbres.selected {
+    fill: #ccff00; 
+    stroke: #ccff00; 
+    stroke-width:2px; /* Stroke width */
+}
+
+#boxplots {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    top: 2vh; /* Distance du haut de la fenêtre */
+    left: 2vw; /* Distance de la gauche de la fenêtre */
+    width: 40vw;
+    height: 20vh;
+    text-align: center;
+    text-anchor:middle;
+    z-index: 13;
+}
+
+#InfoBouton {
+    position: fixed;
+    top: 16vh;
+    left: 3vw;
+    width: 9vw;
+    height: 4vh;
+    z-index: 13; 
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    font-size: auto;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    text-align: center; /* Ensures text is centered within the flex container */
+}
+
+#InfoBouton:hover {
+    background-color: #cdde87;
+    color: #fff;
+}
+
+#Info {
+    font-size: 13px;
+    font-family: "Verdana";
+    color: #01665e;
+    text-rendering: optimizeLegibility;
+    margin-top: 1em;
+    overflow-y: scroll;
+    z-index: 12;
+    top: 22vh; /* Distance du haut de la fenêtre */
+    left: 2vw; /* Distance de la gauche de la fenêtre */
+    text-anchor:middle;
+    width: 40vw;
+    height: 35vh;
+    text-align: center;
+    text-anchor:middle;
+}
+
+#tuto   {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #01665e;
+    top: 8vh; /* Distance du haut de la fenêtre */
+    left: 7vw; /* Distance de la gauche de la fenêtre */
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+    z-index: 13;
+}
+#Info, #boxplots, #carte_id, #footer, #tuto {
+    position: fixed;
+    padding: 2px;
+}
+
+#tri {
+    position: fixed;
+    top: 16vh;
+    left: 20vw;
+    width: 18vw;
+    height: 4vh;
+    z-index: 12; 
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    font-size: auto;
+    z-index: 13;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    text-align: center; /* Ensures text is centered within the flex container */
+}
+
+#tri:hover {
+    background-color: #cdde87;
+    color: #fff;
+}
+
+#SelParc {
+    width: 8vw;
+    height: 3vh;
+    font-size: 13px;
+    font-family: "Verdana";
+    font-weight: bold;
+    color: #01665e;
+    overflow-y: scroll;
+    text-align: center;
+    text-anchor:middle;
+}
+
+#SelGenre {
+    width: 8vw;
+    height: 3vh;
+    font-size: 13px;
+    font-family: "Verdana";
+    font-weight: bold;
+    color: #01665e;
+    overflow-y: scroll;
+    text-align: center;
+    text-anchor:middle;
+}
+
+#footer {
+    bottom: 2vh; /* Distance du bas de la fenêtre */
+    left: 2vw; /* Distance de la droite de la fenêtre */
+    width: 19vw;
+    height: 10vh;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    color: black;
+    z-index: 13;
+    font-style: italic;
+}
+
+#EMS {
+    width:9vw;
+}
+#LIVE {
+    width:9vw;
+}
+
+#carte_id {
+    top: 2vh; /* Distance du haut de la fenêtre */
+    right: 3vw; /* Distance de la droite de la fenêtre */
+    width: 25vw;
+    height: 97vh;
+    background-color: #cdde87;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    z-index: 11;
+}
+
+#profil_graphique {
+    top: 4vh; /* Distance du haut de la fenêtre */
+    right: 3vw; /* Distance de la droite de la fenêtre */
+    width: 25vw;
+    height: 31.3vh;
+}
+
+#diag_violon {
+    top: 35.3vh; /* Distance du haut de la fenêtre */
+    right: 3vw; /* Distance de la droite de la fenêtre */
+    width: 25vw;
+    height: 31.3vh;
+}
+#diag_index {
+    top: 66.6vh; /* Distance du haut de la fenêtre */
+    right: 3vw; /* Distance de la droite de la fenêtre */
+    width: 25vw;
+    height: 31.3vh;
+}
+
+#BoutonIndex {
+    position: fixed;
+    top: 6vh; 
+    right: 31.5vw; 
+    width: 20vh; /* hauteur*/
+    width: 20vh; /* hauteur*/
+    height: 2vw; /* largeur*/
+    z-index: 13; 
+    background-color: #cdde87;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 80%;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    text-align: center; /* Ensures text is centered within the flex container */
+}
+}
+
+#BoutonIndex:hover {
+    background-color: #01665e;
+    color: #cdde87;
+}
+
+#InfoIndex {   
+   position: fixed;
+    top: 6vh; /* Distance du haut de la fenêtre */
+    right: 31.5vw; 
+    width: 20vw;
+    height: 22vh;
+    z-index: 12; 
+    background-color: #cdde87;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-size: 3;
+    font-family: Verdana, sans-serif;
+    transform-origin: top right;
+}
+
+#BoutonIndex2 {
+    position: fixed;
+    top: 37.3vh; 
+    right: 31.5vw; 
+    width: 20vh; /* hauteur*/
+    height: 2vw; /* largeur*/
+    z-index: 13; 
+    background-color: #cdde87;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 80%;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    text-align: center; /* Ensures text is centered within the flex container */
+}
+
+#BoutonIndex2:hover {
+    background-color: #01665e;
+    color: #cdde87;
+}
+
+#InfoIndex2 {   
+   position: fixed;
+    top: 37.3vh; 
+    right: 31.5vw; 
+    width: 25vw;
+    height: 22vh;
+    z-index: 12; 
+    background-color: #cdde87;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-size: 3;
+    font-family: Verdana, sans-serif;
+    transform-origin: top right;
+}
+
+
+#BoutonIndex3 {
+    position: fixed;
+    top: 68.6vh;  
+    right: 31.5vw; 
+    width: 20vh; /* hauteur*/
+    height: 2vw; /* largeur*/
+    z-index: 13; 
+    background-color: #cdde87;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 80%;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    text-align: center; /* Ensures text is centered within the flex container */
+}
+
+#BoutonIndex3:hover {
+    background-color: #01665e;
+    color: #cdde87;
+}
+
+#InfoIndex3 {   
+   position: fixed;
+    top: 68.6vh;
+    right: 31.5vw; 
+    width: 30vw;
+    height: 22vh;
+    z-index: 12; 
+    background-color: #cdde87;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    font-size: 0.2em;
+    font-family: Verdana, sans-serif;
+    transform-origin: top right;
+}
+
+#Titre1 {
+    position: fixed;
+    top: 6vh;
+    right: 2.2vw;
+    width: 10vw; /* Adjust as needed */
+    height: 1vh; /* Adjust as needed */
+    z-index: 12; 
+    background-color: #cdde87;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 70%;
+    font-family: Verdana, sans-serif;
+    transform: rotate(-90deg);
+    transform-origin: bottom right; /* Change the origin to top right */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    text-align: center; /* Ensures text is centered within the flex container */
+}
+
+#Titre2 {   
+   position: fixed;
+    top: 37.3vh; 
+    right: 2.2vw;
+    width: 10vw; /* hauteur*/
+    height: 1vh; /* largeur*/
+    z-index: 12; 
+    background-color: #cdde87;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 70%;
+    font-family: Verdana, sans-serif;
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    text-align: center; /* Ensures text is centered within the flex container */
+}
+
+#Titre3 {   
+   position: fixed;
+    top: 68.6vh; 
+    right: 2.2vw;
+    width: 10vw; /* hauteur*/
+    height: 1vh; /* largeur*/
+    z-index: 12; 
+    background-color: #cdde87;
+    padding: 10px 20px;
+    border: 2px solid #cdde87;
+    border-radius: 1px;
+    color: #01665e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 70%;
+    font-family: Verdana, sans-serif;
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    text-align: center; /* Ensures text is centered within the flex container */
+}
